@@ -13,6 +13,9 @@ export default component$(() => {
         </div>
         <ul>
           <li>
+            <a href="/select">Select</a>
+          </li>
+          <li>
             <a
               href="https://qwik.builder.io/docs/components/overview/"
               target="_blank"

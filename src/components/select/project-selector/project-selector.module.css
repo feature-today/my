@@ -1,0 +1,49 @@
+.hero {
+  display: flex;
+  vertical-align: middle;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 450px;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    gap: 60px;
+    height: 500px;
+  }
+}
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Glassmorphism card effect */
+/* https://generator.ui.glass/ */
+.card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.125);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: rgba(17, 25, 40, 0.75);
+    border-color: rgba(209, 213, 219, 0.3);
+  }
+}
+

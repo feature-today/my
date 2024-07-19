@@ -1,6 +1,6 @@
 {
   "name": "my-qwik-basic-starter",
-  "description": "Demo App with Routing built-in (recommended)",
+  "description": "Demo app with sample routes",
   "engines": {
     "node": "^18.17.0 || ^20.3.0 || >=21.0.0"
   },
@@ -28,24 +28,21 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^1.5.1",
-    "@builder.io/qwik-city": "^1.5.1",
-    "@types/eslint": "^8.56.5",
-    "@types/node": "^20.11.24",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
-    "autoprefixer": "^10.4.14",
+    "@builder.io/qwik": "^1.7.1",
+    "@builder.io/qwik-city": "^1.7.1",
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-qwik": "^1.5.1",
-    "flowbite": "^2.3.0",
-    "postcss": "^8.4.31",
+    "eslint-plugin-qwik": "^1.7.1",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.4",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.3.3",
+    "typescript": "5.4.5",
     "undici": "*",
-    "vercel": "^29.1.1",
-    "vite": "^5.1.4",
+    "vite": "^5.2.10",
     "vite-tsconfig-paths": "^4.2.1"
+  },
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.15.1"
   }
 }

@@ -17,7 +17,7 @@ export default component$(() => {
           </li>
           <li>
             <a
-              href="https://qwik.builder.io/docs/components/overview/"
+              href="https://qwik.dev/docs/components/overview/"
               target="_blank"
             >
               Docs
@@ -25,7 +25,7 @@ export default component$(() => {
           </li>
           <li>
             <a
-              href="https://qwik.builder.io/examples/introduction/hello-world/"
+              href="https://qwik.dev/examples/introduction/hello-world/"
               target="_blank"
             >
               Examples
@@ -33,7 +33,7 @@ export default component$(() => {
           </li>
           <li>
             <a
-              href="https://qwik.builder.io/tutorial/welcome/overview/"
+              href="https://qwik.dev/tutorial/welcome/overview/"
               target="_blank"
             >
               Tutorials

@@ -1,13 +1,14 @@
-import { component$, useVisibleTask$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
+import { isDev } from "@builder.io/qwik/build";
 import {
   QwikCityProvider,
   RouterOutlet,
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
-import { initFlowbite } from "flowbite";
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
+import "../node_modules/@shoelace-style/shoelace/dist/themes/dark.css";
 
 export default component$(() => {
   /**
@@ -17,19 +18,18 @@ export default component$(() => {
    * Don't remove the `<head>` and `<body>` elements.
    */
 
-  
-  // initialise the event listeners for the data attributes on render
-  useVisibleTask$(() => {
-    initFlowbite();
-  });
-
   return (
     <QwikCityProvider>
       <head>
-        <meta charSet="utf-8" />
-        <link rel="manifest" href="/manifest.json" />
+        <meta charset="utf-8" />
+        {!isDev && (
+          <link
+            rel="manifest"
+            href={`${import.meta.env.BASE_URL}manifest.json`}
+          />
+        )}
         <RouterHead />
-        <ServiceWorkerRegister />
+        {!isDev && <ServiceWorkerRegister />}
       </head>
       <body lang="en">
         <RouterOutlet />

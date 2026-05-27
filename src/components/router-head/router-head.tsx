@@ -1,10 +1,12 @@
-import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
-
-import { component$ } from "@builder.io/qwik";
-
 /**
- * The RouterHead component is placed inside of the document `<head>` element.
+ * This file is part of feature-today.
+ * Copyright (C) 2026 feature-today contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
  */
+
+import { component$ } from "@qwik.dev/core";
+import { useDocumentHead, useLocation } from "@qwik.dev/router";
+
 export const RouterHead = component$(() => {
   const head = useDocumentHead();
   const loc = useLocation();
@@ -20,11 +22,9 @@ export const RouterHead = component$(() => {
       {head.meta.map((m) => (
         <meta key={m.key} {...m} />
       ))}
-
       {head.links.map((l) => (
         <link key={l.key} {...l} />
       ))}
-
       {head.styles.map((s) => (
         <style
           key={s.key}
@@ -34,7 +34,6 @@ export const RouterHead = component$(() => {
             : { dangerouslySetInnerHTML: s.style })}
         />
       ))}
-
       {head.scripts.map((s) => (
         <script
           key={s.key}

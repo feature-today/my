@@ -1,0 +1,13 @@
+{
+  "conventionalCommits.scopes": [
+    "app",
+    "ui",
+    "route",
+    "selector",
+    "build",
+    "test",
+    "deps",
+    "ci",
+    "docs"
+  ]
+}

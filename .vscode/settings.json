@@ -8,6 +8,7 @@
     "test",
     "deps",
     "ci",
-    "docs"
+    "docs",
+    "ai"
   ]
 }
